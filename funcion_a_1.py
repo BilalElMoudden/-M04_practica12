@@ -71,6 +71,7 @@ def create_xml():
     for element in root:
         element.set('type', 'student')
     tree.write('students.xml')
+<<<<<<< HEAD
     tree = ET.parse('students.xml')
     ET.dump(root)
 
@@ -78,3 +79,13 @@ def create_xml():
 
 
 
+=======
+    tree = ET.parse('student.xml')
+    ET.dump(root)
+
+    tree.write('student.xml')
+
+
+
+create_xml()
+>>>>>>> rama_angelo
